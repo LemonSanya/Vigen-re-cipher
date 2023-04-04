@@ -22,7 +22,17 @@ def main():
             k = k - len(x)
         result = result + x[k]
         i += 1
-    print(result)
+
+    result = list(result)
+    a = list(a)
+    i = 0
+
+    for q in a:
+        if q == ' ':
+            result.insert(a.index(q) + i, ' ')
+            a.pop(a.index(q))
+            i += 1
+    print(''.join(result))
 
 if __name__ == main():
     main()
