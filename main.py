@@ -36,5 +36,3 @@ def main():
 
 if __name__ == main():
     main()
-
-### output = 'O'
